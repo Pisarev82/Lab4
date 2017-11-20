@@ -38,7 +38,7 @@ public class StudentsListFragment extends Fragment {
                 PictureFragment pictureFragment = new PictureFragment();
 
                 Bundle args = new Bundle();
-                args.putInt("picture_id", student.getPicture());
+                args.putInt("picture_id", student.getPictureBig());
                 pictureFragment.setArguments(args);
 
                 FragmentManager fragmentManager = getFragmentManager();
@@ -53,13 +53,13 @@ public class StudentsListFragment extends Fragment {
 
     void addStudents() {
         students = new ArrayList<>();
-        students.add(new Student("Леха0", R.drawable.boy));
-        students.add(new Student("Леха1", R.drawable.girl));
-        students.add(new Student("Леха2", R.drawable.boy_1));
-        students.add(new Student("Леха3", R.drawable.girl_1));
-        students.add(new Student("Леха4", R.drawable.boy_2));
-        students.add(new Student("Леха5", R.drawable.girl_2));
-        students.add(new Student("Леха6", R.drawable.boy_3));
-        students.add(new Student("Леха7", R.drawable.girl_3));
+        students.add(new Student("Леха0", R.drawable.boy, R.drawable.boy_big));
+        students.add(new Student("Леха1", R.drawable.girl, R.drawable.girl_big));
+        students.add(new Student("Леха2", R.drawable.boy_1, R.drawable.boy_1_big));
+        students.add(new Student("Леха3", R.drawable.girl_1, R.drawable.girl_1_big));
+        students.add(new Student("Леха4", R.drawable.boy_2, R.drawable.boy_2_big));
+        students.add(new Student("Леха5", R.drawable.girl_2, R.drawable.girl_2_big));
+        students.add(new Student("Леха6", R.drawable.boy_3, R.drawable.boy_3_big));
+        students.add(new Student("Леха7", R.drawable.girl_3, R.drawable.girl_3_big));
     }
 }

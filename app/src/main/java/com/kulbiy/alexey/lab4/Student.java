@@ -3,10 +3,13 @@ package com.kulbiy.alexey.lab4;
 public class Student {
     String name;
     int picture;
+    int pictureBig;
 
-    public Student(String name, int pictureId) {
+
+    public Student(String name, int pictureId, int pictureBigId) {
         this.name = name;
         this.picture = pictureId;
+        this.pictureBig = pictureBigId;
     }
 
     public String getName() {
@@ -23,5 +26,13 @@ public class Student {
 
     public void setPicture(int picture) {
         this.picture = picture;
+    }
+
+    public int getPictureBig() {
+        return pictureBig;
+    }
+
+    public void setPictureBig(int pictureBig) {
+        this.pictureBig = pictureBig;
     }
 }
